@@ -34,7 +34,7 @@ Download the suitable installer from [downloads section](https://github.com/Amr-
     in cmd use `pip install redis`
 * **requests**: 
     in cmd use `pip install requests`
-* **json**: *
+* **json**: 
     in cmd use `pip install json`
 * **flask_httpauth**: 
     in cmd use `pip install flask_httpauth`
