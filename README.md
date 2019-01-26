@@ -27,7 +27,22 @@ or *[download](https://github.com/Amr-M-Soliman/NANO_Item_Catalog/archive/master
 
 Download the suitable installer from [downloads section](https://github.com/Amr-M-Soliman/Nano_Log_analysis.git) of the official Python website.
 
-### Installing ###
+### Libraries ###
+* flask
+    in cmd use `pip install flask`
+* redis 
+    in cmd use `pip install redis`
+* requests
+    in cmd use `pip install requests`
+* json
+    in cmd use `pip install json`
+* flask_httpauth
+    in cmd use `pip install flask_httpauth`
+* sqlalchemy
+    in cmd use `pip install sqlalchemy`
+
+ 
+### Installing VM ###
 
 * Unzip the **VM configuration** and you will find a **vagrant** folder
 * Use the **Terminal** to get into the **vagrant** folder from **VM configuration**
