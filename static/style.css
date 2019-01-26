@@ -1,0 +1,198 @@
+/* General */
+ul {
+	list-style-type: none;
+}
+
+.flash__message {
+	display: block;
+	font-size: 1.1rem;
+	font-weight: 700;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	color: #C9924D;
+}
+
+/* Base Template */
+.wrapper .container {
+	max-width: 80rem;
+}
+
+.header {
+	background: #023988;
+	border-bottom: 0.1rem solid #D0D067;
+	display: block;
+	height: 5.2rem;
+	width: 100%;
+}
+
+.header .header__title {
+	color: #023988;
+	display: inline;
+	line-height: 5.2rem;
+	position: relative;
+}
+
+.header__title .title__text {
+	display: inline;
+	font-size: 2.1rem;
+	font-weight: 700;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	color: #F4DDAB;
+}
+
+.header__user {
+	float: right;
+	list-style: none;
+	margin-bottom: 0;
+}
+
+.header__user .user__nav {
+	line-height: 5.2rem;
+	text-decoration: none #E18100;
+	font-size: 1.5rem;
+	font-weight: 700;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	color: #F8E53F;
+}
+
+.content .container {
+	background: #EFEEEC;
+	margin-bottom: 2rem;
+	padding: 2rem;
+	border-bottom: 0.1rem solid #DB2929;
+}
+
+@media (min-width: 40.0rem) {
+	.content .container {
+		margin-top: 2rem;
+		border: 0.1rem solid #9F1616;
+	}
+}
+
+/* Categories Template */
+@media (min-width: 40.0rem) {
+	.categories {
+		border-right: 0.1rem solid #E18100;
+		margin-right: 2rem;
+	}
+}
+
+.list__header .header__title {
+	font-weight: 700;
+	margin-bottom: 1rem;
+	display: block;
+	text-transform: capitalize;
+}
+
+.list__header .header__bar {
+	border-bottom: 0.5rem solid #E18100;
+	height: 0.1rem;
+	display: block;
+	width: 5rem;
+}
+
+.items__item .item__edit,
+.items__item .item__delete {
+	display: inline;
+	font-size: 1.1rem;
+	font-weight: 500;
+	letter-spacing: 0.1rem;
+	text-transform: lowercase;
+	margin-right: 0.2rem;
+}
+
+.items__item .item__name {
+	text-transform: capitalize;
+    font-weight: 800;
+
+}
+
+.items__item .item__type {
+	color: #44716A;
+	font-style: italic;
+	text-transform: capitalize;
+}
+
+.latest__list .list__add {
+	font-size: 0.8rem;
+	height: 2.8rem;
+	line-height: 2.8rem;
+	padding: 0 1.5rem;
+}
+
+/* Category Template */
+/* Category Item Template */
+.category-item__header .header__title {
+	font-weight: 700;
+	margin-bottom: 1rem;
+	display: block;
+	text-transform: capitalize;
+}
+
+.category-item__header .header__bar {
+	border-bottom: 0.5rem solid #E18100;
+	height: 0.1rem;
+	display: block;
+	width: 5rem;
+}
+
+.category-item__description {
+	margin-bottom: 1rem;
+}
+
+.category-item__controls .controls__edit,
+.category-item__controls .controls__delete,
+.category-item__controls .controls__back {
+	display: inline;
+	font-size: 1.1rem;
+	font-weight: 700;
+	letter-spacing: 0.1rem;
+	text-transform: capitalize;
+	margin-right: 0.2rem;
+}
+
+/* Add Category Template */
+.category-item__form .form__label {
+	display: inline;
+	font-size: 1.1rem;
+	font-weight: 700;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+}
+
+.category-item__form .form__textarea {
+	min-height: 30rem;
+}
+
+/* Login Template */
+.wrapper .container--login {
+	max-width: 36rem;
+}
+
+.content .container--login {
+	padding: 7.5rem 5rem;
+	margin-top: 20rem;
+	border: 0.1rem solid #F6D019;
+	text-align: center;
+}
+
+.login__separator {
+	font-weight: 700;
+	margin: 20px 0;
+}
+
+.login__button {
+}
+
+.login__button--facebook {
+	background: #3B5997;
+	border-color: #3B5997;
+}
+
+.login__button--google {
+	margin-top: 1rem;
+	background: #DA4635;
+	border-color: #DA4635;
+}

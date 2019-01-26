@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block content %}
+ <div class = 'flash'>
+		      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+          
+        <ul>
+        {% for message in messages %}
+            <li> <strong> {{ message }} </strong> </li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+    {% endwith %}
+</div>
+
+	<div class="row">
+		<div class="categories column column-25">
+			<div class="categories__list">
+				<h6 class="list__header">
+					<span class="header__title">Categories</span>
+					<span class="header__bar"></span>
+				</h6>
+				<ul class="list__items">
+					{% for category in categories %}
+						<a href="{{url_for('showCategory', category_id = category.id )}}">
+							<li class="items__item">
+								<span class="item__name">{{category.name}}</span>
+                                {% if 'username' in session %}
+                                <br/>
+					<a href="{{url_for('editCategory',
+                             category_id = category.id )}}" class="item__edit">Edit </a>
+                    <a href="{{url_for('deleteCategory',
+                             category_id = category.id )}}" class="item__delete">Delete </a>
+				{% endif %}
+							</li>
+						</a>
+					{% endfor %}
+				</ul>
+                 {% if 'username' in session %}
+					<a href="{{url_for('newCategory')}}" class="button u list__add">Add Category</a>
+				{% endif %}
+               
+			</div>
+		</div>
+ 
+		<div class="latest column column-75">
+			<div class="latest__list">
+				<h6 class="list__header">
+					<span class="header__title">Latest Games</span>
+					<span class="header__bar"></span>
+				</h6>
+				<ul class="list__items">
+					{% for item in items %}
+						<a href="{{url_for('showItem', category_id = item.category.id
+                        ,item_id = item.id)}}">
+							<li class="items__item">
+								<span class="item__name">{{item.name}}
+                                </span>
+								<span class="item__type">({{item.category.name}})</span>
+							</li>
+						</a>
+					{% endfor %}
+				</ul>
+{% if 'username' in session %}
+					<a href="{{url_for('newItem')}}" class="button u list__add">Add Game</a>
+				{% endif %}
+				
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
