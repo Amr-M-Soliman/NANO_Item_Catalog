@@ -29,17 +29,17 @@ Download the suitable installer from [downloads section](https://github.com/Amr-
 
 ### Libraries ###
 * flask
-    in cmd use `pip install flask`
+    -in cmd use `pip install flask`
 * redis 
-    in cmd use `pip install redis`
+    -in cmd use `pip install redis`
 * requests
-    in cmd use `pip install requests`
+    -in cmd use `pip install requests`
 * json
-    in cmd use `pip install json`
+    -in cmd use `pip install json`
 * flask_httpauth
-    in cmd use `pip install flask_httpauth`
+    -in cmd use `pip install flask_httpauth`
 * sqlalchemy
-    in cmd use `pip install sqlalchemy`
+    -in cmd use `pip install sqlalchemy`
 
  
 ### Installing VM ###
