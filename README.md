@@ -32,13 +32,13 @@ Download the suitable installer from [downloads section](https://github.com/Amr-
     in cmd use `pip install flask`
 * **redis**: 
     in cmd use `pip install redis`
-* **requests**: *
+* **requests**: 
     in cmd use `pip install requests`
 * **json**: *
     in cmd use `pip install json`
-* **flask_httpauth**: *
+* **flask_httpauth**: 
     in cmd use `pip install flask_httpauth`
-* **sqlalchemy**: *
+* **sqlalchemy**: 
     in cmd use `pip install sqlalchemy`
 
  
